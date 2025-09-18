@@ -1,0 +1,55 @@
+abrir git bash
+$ ls
+$ ls
+ 329/                   Sourcetree.lnk*        'hola git'/
+'GDevelop 5.lnk'*       desktop.ini             indes.html
+'GitHub Desktop.lnk'*   ejemplo/                repositorioprueba/
+ Python/                ghidra_11.4.2_PUBLIC/
+$ cd desktop
+$ cd holagit
+$ cd ..
+$ pwd
+/c/Users/user/desktop
+
+user@DESKTOP-NCGVTPC MINGW64 ~/desktop
+$ mkdir "hello git"
+$ pwd
+/c/Users/user/desktop
+$ cd hello\ git
+$ code .
+$ git config --global user.name "Marianoyam"
+$ git init
+$ pwd
+$ git status
+******************************
+* Añade un fichero a la rama *
+******************************
+$ git add hellowgit.py
+******************************
+* Añade varios ficheros a la rama *
+******************************
+$ git add .
+
+$ git status
+$ git branch -m main
+$ git add hellowgit.py
+$ git commit -m "este es el primer commit"
+$ git commit -m "este es el segundo commit"
+$ git status
+$ git checkout hellowgit.py
+$ git checkout hellowgit2.py
+$ git reset
+$ git add hellowgit.py
+$ git commit -m "se agregó un print debajo de la cabecera"
+$ git add hellowgit2.py
+$ git commit -m "se agregó el comentario cabecera"
+$ git log
+$ git status
+Para salir del log
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+$ git log --graph
+$ git log --graph --pretty=oneline
+$ git log --graph --decorate --all --oneline
+$ git config --global alias.arbol "log --graph --decorate --all --oneline"
+
